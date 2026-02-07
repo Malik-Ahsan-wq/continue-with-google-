@@ -47,7 +47,7 @@ export default function Login() {
 
         <div>
           <h2 className="mb-6 text-5xl font-bold leading-tight">
-            The backbone of your <br /> enterprise workflow.
+          Haroon bhai this is my  <br /> First fully login page
           </h2>
           <p className="max-w-md text-lg text-zinc-400">
             Secure, scalable, and built for high-performance teams. 
