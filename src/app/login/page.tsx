@@ -118,33 +118,7 @@ export default function Login() {
               <div className="flex-grow border-t border-zinc-100"></div>
             </div>
 
-            {/* Email Form */}
-            <div className="space-y-4">
-              <div>
-                <label className="mb-2 block text-sm font-bold text-zinc-700">
-                  Email Address
-                </label>
-                <input
-                  type="email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  placeholder="e.g. james@company.com"
-                  className="h-12 w-full rounded-xl border border-zinc-200 bg-zinc-50 px-4 text-zinc-900 outline-none transition-all focus:border-blue-500 focus:bg-white focus:ring-4 focus:ring-blue-500/10"
-                />
-              </div>
-
-              <button
-                onClick={handleEmail}
-                disabled={status !== "idle" || !email}
-                className="flex h-12 w-full items-center justify-center rounded-xl bg-blue-600 font-bold text-white shadow-lg shadow-blue-200 transition-all hover:bg-blue-700 hover:shadow-blue-300 active:scale-[0.98] disabled:bg-zinc-300 disabled:shadow-none"
-              >
-                {status === "loading-email" ? (
-                  <div className="h-5 w-5 animate-spin rounded-full border-2 border-white/30 border-t-white" />
-                ) : (
-                  "Send Login Link"
-                )}
-              </button>
-            </div>
+        
 
             {/* Footer Links */}
         
